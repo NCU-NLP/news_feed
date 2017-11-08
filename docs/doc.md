@@ -55,7 +55,7 @@
 
    项目使用Tornado框架搭建展示页面, Tornado是一个使用非阻塞网络I/O的异步Web后端框架，可以支撑上万级的连接，并且Tornado开发简单易编写，作为一个轻量级，可拓展和部署能力都不错，适合承载项目的后台展示功能。
 
-##3.5 页面抓取流程
+## 3.5 页面抓取流程
 
    爬虫框架中将各个功能模块区分开，方便实现子模块，进而便捷地扩展新消息源爬取能力。各个功能流程区分成Spider模块（主控），Downloader模块（下载器），PageProcesser模块（页面分析），Scheduler模块（任务队列），Storage模块(数据存储）， Analysis模块(统计分析),Pipeline模块（存储输出展示）等。框架结构图如下
 
@@ -74,7 +74,7 @@
 ## 3.8 前台展示
 
     前台设计参照下图
-　　![image](./pictures/qiantai.png)
+　![image](./pictures/qiantai.png)
 
 
 # 4 项目进度规划
