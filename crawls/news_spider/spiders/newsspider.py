@@ -5,11 +5,11 @@
 @date:   2017-08-23
 """
 
-from news_spider.items import NewsItem
+from ..items import NewsItem
 
-from scrapy.contrib.spiders import CrawlSpider, Rule
+from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
-from scrapy.contrib.linkextractors.lxmlhtml import LxmlLinkExtractor
+from scrapy.linkextractors.lxmlhtml import LxmlLinkExtractor
 from scrapy.selector import Selector
 import json
 import re
