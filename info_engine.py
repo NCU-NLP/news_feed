@@ -24,7 +24,7 @@ celery_app = Celery('info_engine', broker=CELERY_BROKER, backend=CELERY_BACKEND)
 celery_app.conf.update(CELERY_TASK_RESULT_EXPIRES=3600)
 
 
-# decorator, making 'extract' func become a task of celery.
+# decorator, register 'extract' func as an Celery task
 @celery_app.task
 def extract(w_id):
     """
